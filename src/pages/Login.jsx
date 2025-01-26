@@ -40,11 +40,14 @@ const Login = () => {
     setLoading(true);
     try {
       // TODO: Replace with your backend API call to log in the user
-      // Example: const response = await axios.post("/api/auth/login", {
-      //   email: data.email,
-      //   password: data.password,
-      // });
-      // console.log("Login Successful:", response.data);
+      const response = await axios.post(
+        "https://hackathon-server-boilerplate.vercel.app/api/auth//login",
+        {
+          email: data.email,
+          password: data.password,
+        }
+      );
+      console.log("Login Successful:", response.data);
       navigate("/");
     } catch (error) {
       console.log(error);
