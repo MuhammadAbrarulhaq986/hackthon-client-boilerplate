@@ -8,6 +8,7 @@ import Home from "./pages/Home.jsx";
 import Profile from "./pages/profile";
 import ApplyLoan from "./pages/applyloan.jsx";
 import LoanCategory from "./pages/loancategory.jsx";
+import LoanCal from "./pages/loancal.jsx";
 //import SingleBlog from "./pages/applyloan.jsx";
 //import CreateBlog from "./pages/addBlog.jsx";
 // import ProtectedRoutes from "./components/ProtectedRoutes.jsx";
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "loancategory",
         element: <LoanCategory />,
+      },
+      {
+        path: "loancal",
+        element: <LoanCal />,
       },
     ],
   },
